@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/general.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="assets/images/icon.png" rel="shortcut icon" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <div class="header">
+        <a href="index.html" class="navbar-brand logo">
+            <img src="assets/images/waveit.png" alt="" width="97" height="30">
+        </a>
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a class="active" href="send.html">SEND</a>
+            <a href="receive.html">RECEIVE</a>
+            <a href="profile.html">PROFILE</a>
+        </div>
+    </div>
+    <title>WaveIt</title>
+</head>
+
+<body class="send-bg">
+    <div class="player">
+        <div id="button"></div>
+        <div class="middle-spinner"></div>
+        <svg class="disc" width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                  <defs></defs>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                      <g id="Group" sketch:type="MSLayerGroup" transform="translate(75.000000, 75.000000) scale(1, -1) translate(-75.000000, -75.000000) ">
+                          <path d="M75,150 C116.421356,150 150,116.421356 150,75 C150,33.5786438 116.421356,0 75,0 C33.5786438,0 0,33.5786438 0,75 C0,116.421356 33.5786438,150 75,150 Z" id="Oval-1" fill="#312F2D" sketch:type="MSShapeGroup"></path>
+                          <path d="M27.7421875,75 C27.7421875,101.017578 51.7402344,122.183594 75,122.183594" id="Path-1" stroke="#5A5A5A" stroke-width="3" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+                          <path d="M75,38.1484375 C75,58.4688144 93.4978363,75 111.426601,75" id="Path-1-Copy-3" stroke="#5A5A5A" stroke-width="3" stroke-linecap="round" sketch:type="MSShapeGroup" transform="translate(93.213301, 56.574219) scale(-1, -1) translate(-93.213301, -56.574219) "></path>
+                          <path d="M38.0904708,75 C38.0904708,95.3203769 56.8335434,111.851562 75,111.851562" id="Path-1-Copy" stroke="#5A5A5A" stroke-width="3" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+                          <path d="M75,27.8164062 C75,53.8339844 98.9980469,75 122.257812,75" id="Path-1-Copy-4" stroke="#5A5A5A" stroke-width="3" stroke-linecap="round" sketch:type="MSShapeGroup" transform="translate(98.628906, 51.408203) scale(-1, -1) translate(-98.628906, -51.408203) "></path>
+                      </g>
+                  </g>
+              </svg>
+        <div class="stylus-base"></div>
+        <div class="stylus"></div>
+    </div>
+
+    <div class="container">
+        <label for="formUpload">File Upload</label>
+        <div class="file-upload">
+            <div class="file-select">
+                <div class="file-select-button" id="fileName">Choose File</div>
+                <div class="file-select-name" name="name" id="noFile">No file chosen...</div>
+                <input type="file" name="uploaded_file" id="chooseFile">
+            </div>
+        </div>
+        <!--<div class="form-group">
+            <label for="formText">Text Upload</label>
+            <textarea class="form-control" id="Textarea" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="formPassword">Optional Password</label>
+            <input type="text" class="form-control" id="Password" placeholder="Password">
+        </div>-->
+        <button class="btn btn-info" id="waveIt">~ Wave it ~</button>
+    </div>
+</body>
+<script src="assets/js/general.js"></script>
+<script src="assets/js/waves.js"></script>
+
+</html>
